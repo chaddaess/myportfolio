@@ -1,0 +1,24 @@
+.flex-container
+{
+    flex-direction: row;
+    margin-top: 7cm;
+    text-align: center;
+    font-size: larger; 
+    font-weight: bold;
+    color: black;
+    
+} 
+body
+{
+    background-image: url("giphy.gif");
+    background-size: cover;
+
+
+} 
+
+
+span
+{
+    font-size: x-large;
+    color:rgb(220, 37, 58);
+}
