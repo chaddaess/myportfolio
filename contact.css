@@ -1,0 +1,172 @@
+
+span
+{
+    color: #04C2C9;
+} 
+
+
+h1
+{
+    color:white;
+    text-align:center;
+    font-weight: bold;
+    position:relative;
+} 
+#more
+{
+    text-align: center;
+    color: #04C2C9;
+    font-size: large;
+} 
+
+#aBox
+{
+
+
+    border: 2px white solid;
+    color:white; 
+    width: 10cm;
+    height:10cm; 
+    margin-left: 13.5cm;
+    margin-top: 3cm; 
+    text-align: start;
+    perspective: 1000 px;
+    background-color: transparent;
+} 
+
+.flip-card-inner
+{
+ position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+} 
+
+
+
+
+#aBox:hover .flip-card-inner 
+{
+    transform: rotateY(180deg);
+}
+
+.frontCard, .backCard
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+
+.frontCard
+{
+    border: 2px white solid;
+    color:white; 
+    text-align: start;
+    position: absolute;
+   /* transform: rotateY(180deg);*/
+
+}
+
+
+.backCard
+{
+    position: absolute;
+    transform: rotateY(180deg);
+}
+
+
+#aBox a
+{
+    border: 2px white;
+    color:white;
+} 
+#me
+{
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+body
+{
+    background-color: #252934
+} 
+
+
+footer
+{
+    border: 2px transparent solid; 
+    height: 6cm;
+    width:100%; 
+    margin-top: 4cm;
+    background-color:#1B242F;
+}
+
+.flex-container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around
+    
+} 
+
+#in,#face,#inst
+{
+    padding-top: 2cm;
+}
+
+
+
+h1::after {
+    content: '';
+    position: absolute;
+    width :4.5cm;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #00ddff;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 1s ease;
+    animation: underline-slide 1s ease-out forwards;
+    margin-left: 14.85cm;
+    
+    
+  }
+
+
+
+
+@keyframes underline-slide {
+    from {
+      transform: scaleX(0);
+      transform-origin: bottom left;
+    }
+    to {
+      transform: scaleX(1);
+      transform-origin: bottom right;
+    }
+  } 
+
+
+  #realMe
+  {
+    width: 10cm;
+    height:10cm;
+  } 
+
+
+  #backToTop
+  {
+    position:absolute;
+    padding-left: 47.85%;
+    bottom:0.007cm;
+    
+  } 
+
+  
+
