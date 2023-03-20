@@ -1,0 +1,194 @@
+.container 
+{
+    margin-left: 3cm;
+    text-align: center;
+    margin-top: 2cm;
+} 
+
+
+
+.flex-container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 4px solid #00ddff;
+    background-color: black;
+    color: white; 
+    font-weight: bold; 
+    width: 50cm;
+    height: 1cm;
+} 
+
+
+a 
+{
+    color:white; 
+    text-decoration: none;
+}
+
+
+
+h1
+{
+    background: linear-gradient(to right,#00ddff, #8c00ff,rgb(255, 192, 228)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    text-align: center;
+    margin-left: 7cm;
+}
+
+
+
+img
+{
+    width:4cm;
+    height:4cm; 
+   
+} 
+
+.talking 
+{   padding-top: 1cm;
+    text-align: center;
+    border: 5px solid transparent;
+    border-image: linear-gradient(to right,#04C2C9, #0095ff,rgb(255, 233, 192)) 1;
+    height: 10cm;
+    width: 7cm;
+}
+.on 
+{   padding-top: 1cm;
+    text-align: center;
+    border: 5px solid transparent;
+    border-image: linear-gradient(to right,#04C2C9, #5e9cc8,rgb(255, 233, 192)) 1;
+    height: 10cm;
+    width: 7cm;
+}
+
+.off
+    
+{   padding-top: 1cm;
+    text-align: center;
+    border: 5px solid transparent;
+    border-image: linear-gradient(to right,rgb(255, 233, 192),#04C2C9,#5e9cc8) 1;
+    height: 10cm;
+    width: 7cm;
+
+} 
+
+.hey
+{
+    padding-top: 1cm;
+    text-align: center;
+    border: 5px solid transparent;
+    border-image: linear-gradient(to right, #04C2C9,rgb(255, 233, 192),#5e9cc8) 1;
+    height: 10cm;
+    width: 7cm;
+}
+
+
+
+#about-me
+{
+    text-align: left;
+    font-size: larger;
+    font-weight: bold;
+    background: linear-gradient(to right,#00ddff, #8c00ff,rgb(255, 192, 228));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.skills
+{
+    height: 8cm;
+    width: 8cm;
+    margin-left: 12cm;
+    margin-top: 2cm;
+} 
+
+#My-skills
+{
+    
+    text-align: right;
+    background: linear-gradient(to right,#00ddff, #8c00ff,rgb(255, 192, 228));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 3cm;
+}
+
+
+body {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+ 
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+} 
+
+
+#s1,#s2,#s3 
+{
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+} 
+
+
+
+
+@keyframes rotate {
+    
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+
+
+
+  #about-me,h1{
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+    text-align: left;
+    padding-right: 7cm;
+  }
+  
+  #about-me,h1::after {
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #00ddff;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 2s ease;
+  }
+  
+  #about-me,h1::after {
+    animation: underline-slide 2s ease-out forwards;
+  }
+  
+  @keyframes underline-slide {
+    from {
+      transform: scaleX(0);
+      transform-origin: bottom left;
+    }
+    to {
+      transform: scaleX(1);
+      transform-origin: bottom right;
+    }
+  } 
+
+
+ 
