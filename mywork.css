@@ -1,0 +1,200 @@
+h1
+{
+    background: linear-gradient(to right,#00ddff, #8c00ff,rgb(255, 192, 228)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    position: relative;
+    display: inline-block;
+    padding-top: 1cm;
+    margin-left: 45%;
+ 
+   
+} 
+
+  
+  h1::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #00ddff;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 3s ease;
+    animation: underline-slide 3s ease-out forwards;
+  }
+  
+ 
+  
+  @keyframes underline-slide {
+    from {
+      transform: scaleX(0);
+      transform-origin: bottom left;
+    }
+    to {
+      transform: scaleX(1);
+      transform-origin: bottom right;
+    }
+  } 
+
+
+
+  .flex-container
+  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-top: 3cm; 
+    border: 1px,transparent,solid;
+    
+  } 
+  
+  
+ 
+
+.card
+{
+ position: relative;
+  width: 12cm;
+  height: 10cm;
+  text-align: center;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  border: 1px,solid,black;
+  
+} 
+
+.flex-container:hover .card
+{
+    transform: rotateX(180deg);
+}
+
+.frontCard, .backCard
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.frontCard
+{
+    border: 2px black solid;
+    color:white; 
+    text-align: start;
+    position: absolute; 
+    align-items: center;
+
+
+}
+
+
+.backCard
+{
+    position: absolute;
+    transform: rotateX(180deg);
+    border: 2px black solid;
+    transition: transform 0.5s;
+    
+
+}  
+
+.backCard #title 
+{
+    font-size: large;
+    padding-top: 3cm;
+} 
+
+.backCard #language
+{
+    color: rgb(232, 90, 114);
+} 
+
+
+.backCard button
+{
+    background-color:  rgb(232, 90, 114);
+    color: white;
+    
+ 
+
+}
+
+
+.btn:hover
+{
+    background-color:  rgb(197, 100, 238);
+    color: white;
+}
+
+img
+{
+    padding-left: 0.6cm;
+    padding-top: 1cm;
+}
+
+
+a 
+{
+    color: white;
+    text-decoration: none;
+}
+
+.d-bloc.w-100
+{
+    position: relative;
+    max-width: 100%;
+    
+}
+
+.carousel-item p
+{
+    color: black;
+    text-align: justify; 
+    margin-left: 10%;
+}
+
+.carousel-item H5
+{
+    color:#04C2C9; 
+    margin-left: 10%;
+    text-align: justify; 
+}
+
+#carouselExampleControls
+{
+    height: 10cm;
+    width: 10cm;
+    border: 2px, black solid;
+}
+
+.carousel-item
+{
+   
+}
+
+.carousel-control-next-icon,.carousel-control-prev-icon {
+    background-color: rgb(16, 0, 0); /* change the color of the next button */
+    position: absolute;
+  }
+
+#close
+  {
+    
+    background-color:  rgb(232, 90, 114);
+    color: white;
+    position: relative;
+    margin-top: 10%;
+    margin-left: 40%;
+  }
+
+#close:hover
+{
+    background-color:  rgb(197, 100, 238);
+    color: white;
+}
+

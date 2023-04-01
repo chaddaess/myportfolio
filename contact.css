@@ -27,11 +27,12 @@ h1
     color:white; 
     width: 10cm;
     height:10cm; 
-    margin-left: 13.5cm;
+    margin-left: 12cm;
     margin-top: 3cm; 
     text-align: start;
     perspective: 1000 px;
     background-color: transparent;
+    
 } 
 
 .flip-card-inner

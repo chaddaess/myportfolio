@@ -194,11 +194,11 @@ body {
     background-color: #00ddff;
     transform: scaleX(0);
     transform-origin: bottom right;
-    transition: transform 2s ease;
+    transition: transform 3s ease;
   }
   
   #about-me,h1::after {
-    animation: underline-slide 2s ease-out forwards;
+    animation: underline-slide 3s ease-out forwards;
   }
   
   @keyframes underline-slide {
@@ -210,8 +210,59 @@ body {
       transform: scaleX(1);
       transform-origin: bottom right;
     }
-  }  
-  
+  }
+
+
+
+.skills{
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+.skill-name{
+    font-size: 18px;
+    font-weight: 700;
+    color: #100000;
+    margin: 20px 0;
+}
+
+.skill-bar{
+    height: 14px;
+    background: #282828;
+    border-radius: 3px;
+}
+
+.skill-per{
+    height: 14px;
+    background: #00C3CA;
+    border-radius: 3px;
+    position: relative;
+    animation: fillBars 2.5s ;
+}
+
+.skill-per::before{
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background: #f1f1f1;
+    border-radius: 4px;
+    font-size: 12px;
+    top: -35px;
+    right: 0;
+}
+
+
+
+@keyframes fillBars{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+
 
 
  
