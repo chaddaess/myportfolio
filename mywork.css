@@ -1,3 +1,50 @@
+
+/*setting some css for the bar at the top of the page*/
+#bar
+{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 4px solid #00ddff;
+    background-color: black;
+    color: white; 
+    font-weight: bold; 
+    width: 100%;
+    height: 1cm;
+    margin-top: -0.09%;
+    top:0; 
+    z-index: 999;
+    position: fixed;
+    
+   
+}  
+
+
+
+a:hover
+{
+  color: rgb(223, 15, 112);
+}
+
+.home
+{
+    margin-right:1.5cm;
+}
+
+.about-me
+{
+    margin-right:1.5cm;
+}
+.contact
+{
+    margin-right:1.5cm;
+}
+.Portfolio
+{
+    margin-right:1.5cm;
+
+}
+
+
 h1
 {
     background: linear-gradient(to right,#00ddff, #8c00ff,rgb(255, 192, 228)
@@ -6,13 +53,13 @@ h1
     -webkit-text-fill-color: transparent; 
     position: relative;
     display: inline-block;
-    padding-top: 1cm;
+    padding-top: 2cm;
     margin-left: 45%;
  
    
 } 
 
-  
+  /*setting the line that slides in at (re)load*/
   h1::after {
     content: '';
     position: absolute;
@@ -41,7 +88,7 @@ h1
   } 
 
 
-
+/*setting some css for the project cards and their animation*/
   .flex-container
   {
     display: flex;
@@ -55,8 +102,6 @@ h1
   } 
   
   
- 
-
 .card
 {
  position: relative;
@@ -102,7 +147,7 @@ h1
     
 
 }  
-
+/*some css for the writing in the backcard*/
 .backCard #title 
 {
     font-size: large;
@@ -133,8 +178,8 @@ h1
 
 img
 {
-    padding-left: 0.6cm;
-    padding-top: 1cm;
+    max-width: 12cm;
+    max-height: 10cm;
 }
 
 
@@ -143,7 +188,7 @@ a
     color: white;
     text-decoration: none;
 }
-
+/*adding some css for the projects' descriptions*/
 .d-bloc.w-100
 {
     position: relative;
@@ -172,17 +217,13 @@ a
     border: 2px, black solid;
 }
 
-.carousel-item
-{
-   
-}
-
+/*making the buttons visible*/
 .carousel-control-next-icon,.carousel-control-prev-icon {
     background-color: rgb(16, 0, 0); /* change the color of the next button */
     position: absolute;
   }
 
-#close
+#close /*the close button for the project carousels*/
   {
     
     background-color:  rgb(232, 90, 114);
@@ -197,4 +238,7 @@ a
     background-color:  rgb(197, 100, 238);
     color: white;
 }
+
+
+
 
