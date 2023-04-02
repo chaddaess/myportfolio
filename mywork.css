@@ -68,10 +68,10 @@ h1
     bottom: 0;
     left: 0;
     background-color: #00ddff;
-    transform: scaleX(0);
     transform-origin: bottom right;
-    transition: transform 3s ease;
-    animation: underline-slide 3s ease-out forwards;
+    transition: transform 3s ;
+    animation: underline-slide 3s ease-out forwards; /*animation starts fast then slows down, 
+    and element keeps its final state when the animation is over*/
   }
   
  
@@ -180,6 +180,7 @@ img
 {
     max-width: 12cm;
     max-height: 10cm;
+    padding-left: 5%;
 }
 
 
