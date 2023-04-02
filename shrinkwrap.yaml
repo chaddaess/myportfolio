@@ -1,0 +1,20 @@
+dependencies:
+  bootstrap: 5.2.3
+  bootswatch: 5.2.3
+packages:
+  /bootstrap/5.2.3:
+    dev: false
+    peerDependencies:
+      '@popperjs/core': ^2.11.6
+    resolution:
+      integrity: sha512-cEKPM+fwb3cT8NzQZYEu4HilJ3anCrWqh3CHAok1p9jXqMPsPTBhU25fBckEJHJ/p+tTxTFTsFQGM+gaHpi3QQ==
+  /bootswatch/5.2.3:
+    dev: false
+    resolution:
+      integrity: sha512-tvnW15WoOY2sEp1uT1ITDQiJy2TekQa+K+Q28WDXibleIxsY0nAoC9IylbnUPD7Q5vkCIclOuBHLVBblJYYPSA==
+registry: 'https://registry.npmjs.org/'
+shrinkwrapMinorVersion: 9
+shrinkwrapVersion: 3
+specifiers:
+  bootstrap: ^5.2.3
+  bootswatch: ^5.2.3
