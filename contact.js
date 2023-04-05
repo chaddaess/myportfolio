@@ -15,6 +15,9 @@ addEventListener("mouseout",(e)=>{
     e.target.style.height="";
     e.target.style.wifth="";
 
-}) 
+})  
+
+
+
 
 
