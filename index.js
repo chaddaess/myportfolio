@@ -1,7 +1,3 @@
-import 'bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootswatch/dist/darkly/bootstrap.min.css';
-
 let butt=document.querySelector(".btn.btn-primary");
 butt.addEventListener("mouseover",()=>
 {   setTimeout(()=>
