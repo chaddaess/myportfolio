@@ -20,10 +20,6 @@
 
 
 
-a:hover
-{
-  color: rgb(223, 15, 112);
-}
 
 .home
 {
@@ -175,11 +171,17 @@ h1
 }
 
 
-.btn,.btn2:hover
+.btn:hover,.btn2:hover
 {
     background-color:  rgb(197, 100, 238);
-    color: white;
+    color: rgb(223, 15, 112);
 }
+
+.btn:hover .link-a ,.btn2:hover .link-a
+{
+    color: rgb(223, 15, 112);
+}
+
 
 img
 {
@@ -242,8 +244,11 @@ a
 #close:hover,#close2:hover
 {
     background-color:  rgb(197, 100, 238);
-    color: white;
+    
 }
+
+
+
 
 
 .box2

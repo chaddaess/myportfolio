@@ -17,6 +17,8 @@ butt.addEventListener('click',()=>{
 
 });
 
+
+
 closeBtn.addEventListener('click',()=>{
     hidden.style.display='none';
     closeBtn.style.display='none';
