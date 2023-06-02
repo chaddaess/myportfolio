@@ -264,13 +264,12 @@ iframe
 
 .projectImg
 {
-  max-width: 110%;
+
   max-height: 80%;
-  min-width: 110%;
+  max-width: 90%;
   min-height: 80%;
-  padding-right: 14%;
   padding-top: 6%;
-  scale: 1.25;
+  scale: 1.4;
 } 
 
 ul,span
