@@ -114,7 +114,12 @@ h1
   
 } 
 
-.flex-container:hover .card
+#project1:hover
+{
+    transform: rotateX(180deg);
+}
+
+ #project2:hover
 {
     transform: rotateX(180deg);
 }
@@ -170,7 +175,7 @@ h1
 }
 
 
-.btn:hover
+.btn,.btn2:hover
 {
     background-color:  rgb(197, 100, 238);
     color: white;
@@ -224,7 +229,7 @@ a
     position: absolute;
   }
 
-#close /*the close button for the project carousels*/
+#close,#close2 /*the close button for the project carousels*/
   {
     
     background-color:  rgb(232, 90, 114);
@@ -234,11 +239,46 @@ a
     margin-left: 40%;
   }
 
-#close:hover
+#close:hover,#close2:hover
 {
     background-color:  rgb(197, 100, 238);
     color: white;
 }
+
+
+.box2
+{
+  display: flex;
+  flex-direction: row;
+}
+iframe
+{
+  margin-top: 4%;
+  margin-left: 4%;
+}
+
+.projectImg
+{
+  max-width: 110%;
+  max-height: 80%;
+  min-width: 110%;
+  min-height: 80%;
+  padding-right: 14%;
+  padding-top: 6%;
+  scale: 1.25;
+} 
+
+ul,span
+{
+  margin-left: 6%;
+}
+span
+{
+  color: #1FD1C5;
+  font-weight: bold;
+}
+
+
 
 
 
